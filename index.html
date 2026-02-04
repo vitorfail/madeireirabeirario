@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beira Rio Linktree Personalizado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #11cb49 0%, #155F3B 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .profile-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #2575fc;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+        }
+        
+        .profile-name {
+            color: #333;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .profile-bio {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 18px 25px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .link-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .link-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 24px;
+            color: white;
+        }
+        
+        .instagram {
+            background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+        
+        .whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+        
+        .google {
+            background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335);
+        }
+        
+        .link-text {
+            flex-grow: 1;
+            text-align: left;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 600px) {
+            .profile-card {
+                padding: 20px;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .profile-name {
+                font-size: 24px;
+            }
+            
+            .link-item {
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+            
+            .link-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <!-- Foto de perfil (substitua pelo URL da sua foto) -->
+            <img src="https://bio.linkcdn.cc/upload/8011915ntik66/2026012022/176894851400040108.png" alt="Foto de perfil" class="profile-img">
+            
+            <!-- Nome (substitua pelo seu nome) -->
+            <h1 class="profile-name">Madeireira Beira Rio</h1>
+            
+            <!-- Bio (opcional, pode personalizar) -->
+            <p class="profile-bio">Somos mais que Madeira!</p>
+        </div>
+        
+        <div class="links-container">
+            <!-- Link para Instagram -->
+            <a href="https://www.instagram.com/madeireirabeirario?igsh=MWhqcDZ1YWRlcnZ2bQ==" target="_blank" class="link-item">
+                <div class="link-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="link-text">Instagram</div>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            
+            <!-- Link para WhatsApp -->
+            <a href="https://bit.ly/2OEYQav" target="_blank" class="link-item">
+                <div class="link-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="link-text">WhatsApp</div>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            
+            <!-- Link para Google -->
+            <a href="https://www.google.com/search?sca_esv=b82d7f5630f7ead9&rlz=1C1GCEA_enBR1109BR1109&sxsrf=ANbL-n4UJG6qH-Ij4APoAY6nBCOACeSybA:1768856779357&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOV2SJf1mUtgW2mX9y2o-CjfYJ2YvSd03A5v5Px5_PNeSbfUtbWy14dyCocBM11Rcg9Kix84yxPrCTOPVvW_1LNVpAwp0XTdo1XcW49_ccWkV1CNzvg%253D%253D&q=Madeireira+Beira+Rio+Coment%C3%A1rios&sa=X&ved=2ahUKEwjTxvf_wJiSAxUHq5UCHSOiN7IQ0bkNegQIJhAF&biw=2560&bih=911&dpr=1&aic=0" target="_blank" class="link-item">
+                <div class="link-icon google">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="link-text">Google</div>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 Meus Links. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script>
+        // Efeitos interativos para os links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.link-item');
+            
+            links.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.color = '#2575fc';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.color = '#333';
+                });
+            });
+            
+            // Atualização dinâmica da hora (opcional)
+            const footer = document.querySelector('.footer p');
+            const originalText = footer.textContent;
+            const date = new Date();
+            const year = date.getFullYear();
+            
+            // Atualizar o ano no copyright
+            footer.textContent = footer.textContent.replace('2023', year);
+        });
+    </script>
+</body>
+</html>
